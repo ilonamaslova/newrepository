@@ -32,6 +32,11 @@ public class TestInit {
         driver.findElement(By.xpath("//input[@id='text']")).sendKeys(googleWord + "\n");
     }
 
+    public void searchBook(String bookName){
+        driver.get("https://www.loc.gov/");
+        driver.findElement(By.xpath("//input[@id='search']")).sendKeys(bookName + "\n");
+    }
+
     public void searchElement(String site, String locator){
         driver.get(site);
         driver.findElement(By.xpath(locator)).click();

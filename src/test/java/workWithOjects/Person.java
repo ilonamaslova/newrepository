@@ -18,9 +18,10 @@ public class Person {
         System.out.println(engineerSantechnic.engineerName + ":" + engineerSantechnic.age);
 
         Engineer defaultEngineer = new Engineer();
+        System.out.println(defaultEngineer.engineerName + ":" + defaultEngineer.age);
 
-        engineerProgrammer.printName();
-        System.out.println(engineerProgrammer.engineerName);
+//        engineerProgrammer.printName();
+        System.out.println(engineerProgrammer.engineerName + ":" + engineerProgrammer.age);
     }
     int age = 35;
     String name = "Vadym";
